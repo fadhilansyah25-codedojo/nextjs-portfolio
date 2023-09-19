@@ -9,7 +9,7 @@ import * as HiIcon from "react-icons/hi";
 
 export default function Intro() {
   return (
-    <section className="mb-28 max-w-screen-md text-center sm:mb-0">
+    <section className="mb-24 max-w-screen-md text-center sm:mb-0">
       {/* profile picture */}
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -54,9 +54,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, Fadil Ardiansyah</span> I'm a{" "}
+        <span className="font-bold">Hello, I'm Fadil Ardiansyah</span> I'm a{" "}
         <span className="font-bold">web developer</span> with{" "}
-        <span className="font-bold">1 years</span> of experience. I enjoy
+        <span className="font-bold">1+ years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
@@ -97,8 +97,8 @@ export default function Intro() {
         <a
           href="https://www.linkedin.com/in/fadhilansyah25/"
           className="flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-white px-3 
-          py-4 text-[#0077B5] shadow-sm 
-          outline-none transition duration-200 hover:scale-110 focus:scale-110 active:scale-105 sm:py-3 "
+          py-4 text-[#0077B5] shadow-sm outline-none transition duration-200 hover:scale-[1.2] 
+          focus:scale-110 active:scale-105 sm:py-3 "
           target="_blank"
         >
           <BsIcon.BsLinkedin className="opacity-80" />
@@ -109,7 +109,7 @@ export default function Intro() {
         <a
           href="https://github.com/fadhilansyah25"
           className="flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-white px-3 py-4 shadow-sm 
-          outline-none transition duration-200 hover:scale-110 focus:scale-110 active:scale-105 sm:py-3 "
+          outline-none transition duration-200 hover:scale-[1.2] focus:scale-110 active:scale-105 sm:py-3 "
           target="_blank"
         >
           <BsIcon.BsGithub className="opacity-80" />
