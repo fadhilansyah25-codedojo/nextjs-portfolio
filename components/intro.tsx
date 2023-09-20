@@ -9,7 +9,7 @@ import * as HiIcon from "react-icons/hi";
 
 export default function Intro() {
   return (
-    <section className="mb-24 max-w-screen-md text-center sm:mb-0">
+    <section className="mb-24 max-w-screen-md text-center sm:mb-0" id="home">
       {/* profile picture */}
       <div className="flex items-center justify-center">
         <div className="relative">

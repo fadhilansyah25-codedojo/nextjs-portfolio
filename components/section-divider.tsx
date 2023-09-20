@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { BsChevronDoubleDown, BsMouse } from "react-icons/bs";
 import { motion } from "framer-motion";
 
@@ -15,7 +14,7 @@ export default function SectionDivider() {
       <motion.div
         className="flex flex-col items-center text-gray-600"
         animate={{
-          opacity: [0, 0.5, 1, 0],
+          opacity: [0.3, 0.6, 0.8, 1, 0.1],
         }}
         transition={{
           repeat: Infinity,
