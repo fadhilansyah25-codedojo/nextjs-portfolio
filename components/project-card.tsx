@@ -20,7 +20,7 @@ export default function Project({
     offset: ["0 1", "1.33 1"],
   });
 
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
@@ -30,18 +30,17 @@ export default function Project({
         opacity: opacityProgress,
       }}
       ref={ref}
-      className="mb-3 last:mb-0 sm:mb-8"
+      className="group mb-3 last:mb-0 sm:mb-8"
     >
       <section
-        className="
-      group relative max-w-[42rem] overflow-hidden 
-      border border-black/5 bg-gray-100 transition odd:pl-8
-      hover:bg-gray-200 sm:h-[20rem] sm:pr-8"
+        className="relative max-w-[42rem] overflow-hidden 
+      rounded-lg border border-black/5 bg-gray-100 transition
+      hover:bg-gray-200 sm:h-[20rem] sm:pr-8 sm:group-odd:pl-8"
       >
         {/* project desc */}
         <div
-          className="flex h-full flex-col px-5 pb-7 pt-4 group-odd:ml-[18rem] 
-          sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10"
+          className="flex h-full flex-col px-5 pb-7 pt-4 sm:max-w-[50%] 
+          sm:pl-10 sm:pr-2 sm:pt-10 sm:group-odd:ml-[18rem]"
         >
           <h3 className="text-2xl">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
@@ -49,7 +48,7 @@ export default function Project({
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className="rounded-md bg-black/[0.7] px-3 py-1 text-[0.7rem] 
+                className="rounded-sm bg-black/[0.7] px-3 py-1 text-[0.7rem] 
                 uppercase tracking-wider text-white"
               >
                 {tag}
@@ -63,19 +62,22 @@ export default function Project({
           src={imageUrl}
           alt={`${title} project image`}
           quality={95}
-          className="group-odd:-right-[initial] absolute -right-40 top-8 
-          w-[28.25rem] rounded-t-lg shadow-2xl 
-          transition 
-          group-odd:-left-40
-          group-hover:-translate-x-3
+          className="rounded-lg sm:rounded-t-lg sm:absolute sm:-right-40 
+          sm:top-8 sm:w-[28.25rem]
 
-          group-hover:translate-y-3 
-          group-hover:-rotate-2 
-          group-hover:scale-105
+          sm:shadow-2xl
+          sm:transition          
+          sm:group-odd:-left-40 
+          sm:group-odd:right-[0] 
 
-          group-odd:group-hover:-translate-y-3 
-          group-odd:group-hover:translate-x-3 
-          group-odd:group-hover:rotate-2
+          sm:group-hover:-translate-x-3
+          sm:group-hover:translate-y-3 
+          sm:group-hover:-rotate-2 
+          sm:group-hover:scale-[1.04] 
+          sm:group-odd:group-hover:-translate-y-3
+
+          sm:group-odd:group-hover:translate-x-3
+          sm:group-odd:group-hover:rotate-2
         "
         />
       </section>
