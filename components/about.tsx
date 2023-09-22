@@ -1,11 +1,16 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
+  const { ref } = useSectionInView("About", { amount: 0.5 });
+
   return (
     <motion.section
+      ref={ref}
       className="mb-28 mt-20 max-w-[45rem] scroll-mt-28 px-4 leading-7 sm:mb-40"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}

@@ -24,6 +24,7 @@ export default function Project({
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
+    /* using motion component because prevent dirty code and unreadable */
     <motion.div
       style={{
         scale: scaleProgress,
@@ -32,6 +33,7 @@ export default function Project({
       ref={ref}
       className="group mb-3 last:mb-0 sm:mb-8"
     >
+      {/* project card section inner motion component */}
       <section
         className="relative max-w-[42rem] overflow-hidden 
       rounded-lg border border-black/5 bg-gray-100 transition
@@ -62,8 +64,8 @@ export default function Project({
           src={imageUrl}
           alt={`${title} project image`}
           quality={95}
-          className="rounded-lg sm:rounded-t-lg sm:absolute sm:-right-40 
-          sm:top-8 sm:w-[28.25rem]
+          className="rounded-lg sm:absolute sm:-right-40 sm:top-8 
+          sm:w-[28.25rem] sm:rounded-t-lg
 
           sm:shadow-2xl
           sm:transition          

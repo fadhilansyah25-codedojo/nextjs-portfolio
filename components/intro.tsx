@@ -1,15 +1,20 @@
 "use client";
 
+import React from "react";
 import Image from "next/image";
 import ProfilePic from "@/public/Photo.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import * as BsIcon from "react-icons/bs";
 import * as HiIcon from "react-icons/hi";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
+  const { ref } = useSectionInView("Home", { amount: 0.5 });
+
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-24 max-w-screen-md scroll-mt-[100rem] text-center sm:mb-0"
     >

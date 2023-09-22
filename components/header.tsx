@@ -3,8 +3,13 @@
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
+import clsx from "clsx";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Header() {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+
   return (
     <header className="relative z-[999]">
       {/* Navigation Background and Shape */}
@@ -34,18 +39,42 @@ export default function Header() {
         font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5"
         >
           {links.map((link) => (
+            /* list item of navigation link */
             <motion.li
-              className="flex h-3/4 items-center justify-center"
+              className="relative flex h-3/4 items-center justify-center"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
+              {/* navigation link */}
               <Link
-                className="flex w-full items-center justify-center px-3 py-3 
-                transition hover:text-gray-950"
+                className={clsx(
+                  `flex w-full items-center justify-center px-3 py-3 
+                 transition hover:text-gray-950`,
+                  {
+                    "text-gray-950": activeSection === link.name,
+                  },
+                )}
                 href={link.hash}
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
               >
                 {link.name}
+
+                {/* link background when section is active */}
+                {link.name === activeSection ? (
+                  <motion.span
+                    className="absolute inset-0 -z-10 rounded-lg bg-gray-300/50 backdrop-blur-sm"
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                  />
+                ) : null}
               </Link>
             </motion.li>
           ))}
