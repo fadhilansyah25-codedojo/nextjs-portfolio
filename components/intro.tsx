@@ -8,8 +8,10 @@ import Link from "next/link";
 import * as BsIcon from "react-icons/bs";
 import * as HiIcon from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const { ref } = useSectionInView("Home", { amount: 0.5 });
 
   return (
@@ -84,6 +86,10 @@ export default function Intro() {
           className="group flex items-center justify-center gap-2 rounded-md bg-gray-900 px-7 py-4 text-white 
           shadow-sm outline-none transition duration-200 hover:scale-110 hover:bg-gray-950 focus:scale-110
           active:scale-105 sm:py-3 sm:text-sm"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here{" "}
           <BsIcon.BsArrowBarRight className="opacity-70 transition group-hover:translate-x-1" />
