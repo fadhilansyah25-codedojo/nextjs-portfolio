@@ -64,6 +64,7 @@ export default function Project({
           src={imageUrl}
           alt={`${title} project image`}
           quality={95}
+          placeholder="blur"
           className="rounded-lg sm:absolute sm:-right-40 sm:top-8 
           sm:w-[28.25rem] sm:rounded-t-lg
 
