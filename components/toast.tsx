@@ -27,13 +27,13 @@ export const useToast = () => {
   const [toastOpacity, setToastOpacity] = React.useState<1 | 0>(0);
   const [message, setMessage] = React.useState<ToastConfig["message"]>("");
   const [typeNotif, setTypeNotif] =
-    React.useState<ToastConfig["typeNotif"]>("error");
+    React.useState<ToastConfig["typeNotif"]>("success");
 
   const setToast = ({
     autohide = true,
     delayHide = 5000,
     message,
-    typeNotif = "error",
+    typeNotif = "success",
   }: ToastConfig) => {
     setMessage(message);
     setTypeNotif(typeNotif);
