@@ -41,7 +41,7 @@ export default function Contact() {
     >
       <SectionHeading>Contact Me</SectionHeading>
 
-      <p className="text-center text-gray-700">
+      <p className="text-center text-gray-700 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:fadilansyah25.dev@gmail.com">
           fadilansyah25.dev@gmail.com
@@ -53,7 +53,8 @@ export default function Contact() {
         <input
           name="sender-email"
           id="email"
-          className="rounded-sm border border-black/10 px-4 py-2"
+          className="rounded-sm border border-black/10 px-4 py-2 dark:bg-white 
+          dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:text-black"
           type="email"
           placeholder="Your email"
           required
@@ -65,7 +66,8 @@ export default function Contact() {
           cols={30}
           rows={10}
           placeholder="Your message"
-          className="mb-4 h-52 rounded-sm border border-black/5 p-4"
+          className="mb-4 h-52 rounded-sm border border-black/5 p-4 dark:bg-white 
+          dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:text-black"
           required
           maxLength={5000}
         />

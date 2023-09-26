@@ -5,6 +5,7 @@ import Header from "../components/header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
 import Toast, { ToastContextProvider } from "@/components/toast";
+import ThemeSwitch from "@/components/theme-switch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,17 +22,18 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.className} relative bg-gray-50 pt-28 text-gray-950`}
+        className={`${inter.className} relative bg-gray-50 pt-28 text-gray-950 dark:bg-gray-900
+        dark:text-gray-50 dark:text-opacity-90`}
       >
         {/* gradient backgroud effect */}
         <div
           className="absolute right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem] 
-        rounded-full bg-[#fbe2e3] blur-[10rem] sm:w-[68.75rem]"
+        rounded-full bg-[#fbe2e3] blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"
         ></div>
         <div
           className="2xl:left[-5rem] absolute left-[-35rem] top-[-1rem] -z-10 h-[31.25rem] 
         w-[50rem] rounded-full bg-[#dbd7fd] blur-[10rem] sm:w-[68.75rem] md:left-[-33rem]
-        lg:left-[-28rem] xl:left-[-15rem]
+        lg:left-[-28rem] xl:left-[-15rem] dark:bg-[#676394]
         "
         ></div>
 
@@ -48,6 +50,9 @@ export default function RootLayout({
 
             {/* toast notification */}
             <Toast />
+
+            {/* theme switch */}
+            <ThemeSwitch />
           </ToastContextProvider>
         </ActiveSectionContextProvider>
       </body>

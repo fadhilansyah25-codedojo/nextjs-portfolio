@@ -12,13 +12,14 @@ export default function SectionDivider() {
     >
       <div className="hidden h-16 w-[1.5px] rounded-full bg-gray-300 sm:block"></div>
       <motion.div
-        className="flex flex-col items-center text-gray-600"
+        className="flex flex-col items-center text-gray-600 font-medium dark:text-white"
         animate={{
-          opacity: [0.3, 0.6, 0.8, 1, 0.1],
+          opacity: [0.3, 0.6, 0.8, 1, 1, 0.8, 0.6, 0.1],
         }}
         transition={{
           repeat: Infinity,
-          duration: 2,
+          duration: 3,
+          delay: 0.5
         }}
       >
         <BsMouse className="hidden sm:block" />

@@ -10,7 +10,7 @@ export default function SubmitBtn() {
       className="group flex w-[8rem] items-center justify-center gap-1 rounded-md 
       bg-gray-900 py-2 text-sm text-white outline-none transition-all 
       hover:scale-110 hover:bg-gray-950 focus:scale-105 active:scale-105
-      disabled:scale-100 disabled:bg-opacity-60"
+      disabled:scale-100 disabled:bg-opacity-60 dark:bg-white dark:bg-opacity-20"
       disabled={pending}
     >
       {pending ? (

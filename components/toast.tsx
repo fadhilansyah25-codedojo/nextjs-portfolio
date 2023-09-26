@@ -27,13 +27,13 @@ export const useToast = () => {
   const [toastOpacity, setToastOpacity] = React.useState<1 | 0>(0);
   const [message, setMessage] = React.useState<ToastConfig["message"]>("");
   const [typeNotif, setTypeNotif] =
-    React.useState<ToastConfig["typeNotif"]>("success");
+    React.useState<ToastConfig["typeNotif"]>("error");
 
   const setToast = ({
     autohide = true,
     delayHide = 5000,
     message,
-    typeNotif = "success",
+    typeNotif = "error",
   }: ToastConfig) => {
     setMessage(message);
     setTypeNotif(typeNotif);
@@ -95,12 +95,12 @@ export default function Toast() {
   return (
     <motion.div
       id="toast-simple"
-      className="space-x fixed bottom-5 right-5 z-50 hidden w-full max-w-xs 
-      items-center space-x-4 divide-x divide-gray-200 rounded-md bg-white p-4 
-      text-gray-500 shadow"
+      className="space-x fixed bottom-5 right-5 z-50 hidden w-full 
+      max-w-xs items-center space-x-4 divide-x divide-gray-200 rounded-md bg-white 
+      p-4 text-gray-500 shadow dark:divide-gray-700 dark:bg-gray-800 dark:text-gray-400"
       role="alert"
       animate={{
-        y: toastOpacity ? 0 : 100,
+        y: toastOpacity ? 0 : 200,
         display: toastOpacity ? "flex" : "hidden",
       }}
     >
@@ -108,7 +108,7 @@ export default function Toast() {
         {typeNotif === "success" ? (
           <VscSend className="text-lg text-blue-600" />
         ) : (
-          <VscError className="text-xl text-red-500 font-bold" />
+          <VscError className="text-xl font-bold text-red-500" />
         )}
       </div>
       <div className="pl-4 text-sm font-normal">{message}</div>

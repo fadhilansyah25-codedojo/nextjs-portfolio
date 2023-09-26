@@ -99,12 +99,12 @@ export default function Intro() {
         <a
           className="group flex items-center justify-center gap-2 rounded-lg bg-white px-7 py-4 
           shadow-sm outline-none transition duration-200 hover:scale-110 focus:scale-110 active:scale-105 sm:py-3
-          sm:text-sm"
+          sm:text-sm dark:bg-black/40"
           href="https://drive.google.com/file/d/1UtxJv5ZPRdQ6Mie6QSVdoj1X0bMIfyIy/view?usp=sharing"
           target="_blank"
         >
           Download CV{" "}
-          <HiIcon.HiDownload className="opacity-70 transition group-hover:scale-110" />
+          <HiIcon.HiDownload className="transition group-hover:scale-110" />
         </a>
 
         {/* button link for linkedin */}
@@ -112,21 +112,22 @@ export default function Intro() {
           href="https://www.linkedin.com/in/fadhilansyah25/"
           className="flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-white px-3 
           py-4 text-[#0077B5] shadow-sm outline-none transition duration-200 hover:scale-[1.2] 
-          focus:scale-110 active:scale-105 sm:py-3 "
+          focus:scale-110 active:scale-105 sm:py-3 dark:bg-black/40"
           target="_blank"
         >
-          <BsIcon.BsLinkedin className="opacity-80" />
+          <BsIcon.BsLinkedin/>
           <p className="sm:hidden">Linkedin</p>
         </a>
 
         {/* button link for github */}
         <a
           href="https://github.com/fadhilansyah25"
-          className="flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-white px-3 py-4 shadow-sm 
-          outline-none transition duration-200 hover:scale-[1.2] focus:scale-110 active:scale-105 sm:py-3 "
+          className="flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-white px-3 py-4 
+          shadow-sm outline-none transition duration-200 hover:scale-[1.2] focus:scale-110 active:scale-105 
+          sm:py-3 dark:bg-black/40"
           target="_blank"
         >
-          <BsIcon.BsGithub className="opacity-80" />
+          <BsIcon.BsGithub/>
           <p className="sm:hidden">Github</p>
         </a>
       </motion.div>
