@@ -66,7 +66,7 @@ export default function Header() {
                 {/* link background when section is active */}
                 {link.name === activeSection ? (
                   <motion.span
-                    className="absolute inset-0 -z-10 rounded-lg bg-gray-300/50 backdrop-blur-sm"
+                    className="absolute inset-0 -z-10 rounded-md bg-gray-300/50 backdrop-blur-sm"
                     layoutId="activeSection"
                     transition={{
                       type: "spring",

@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Header from "../components/header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
+import Toast, { ToastContextProvider } from "@/components/toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,14 +36,19 @@ export default function RootLayout({
         ></div>
 
         <ActiveSectionContextProvider>
-          {/* header */}
-          <Header />
+          <ToastContextProvider>
+            {/* header */}
+            <Header />
 
-          {/* main content */}
-          {children}
+            {/* main content */}
+            {children}
 
-          {/* footer */}
-          <Footer />
+            {/* footer */}
+            <Footer />
+
+            {/* toast notification */}
+            <Toast />
+          </ToastContextProvider>
         </ActiveSectionContextProvider>
       </body>
     </html>

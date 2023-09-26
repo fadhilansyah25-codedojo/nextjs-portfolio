@@ -6,9 +6,22 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
+import { useToastContext } from "./toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const { setToast } = useToastContext();
+
+  const handleSendEmail = async (formData: FormData) => {
+    const { error } = await sendEmail(formData);
+
+    if (error) {
+      setToast({ message: error, typeNotif: "error" });
+      return;
+    }
+
+    setToast({ message: "Email sent successfully!" });
+  };
 
   return (
     <motion.section
@@ -36,19 +49,7 @@ export default function Contact() {
         or through this form
       </p>
 
-      <form
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            alert(error);
-            return;
-          }
-
-          alert("Email Sent");
-        }}
-        className="mt-10 flex flex-col gap-3"
-      >
+      <form className="mt-10 flex flex-col gap-3" action={handleSendEmail}>
         <input
           name="sender-email"
           id="email"

@@ -1,4 +1,3 @@
-import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
 
@@ -12,6 +11,7 @@ export default function SubmitBtn() {
       bg-gray-900 py-2 text-sm text-white outline-none transition-all 
       hover:scale-110 hover:bg-gray-950 focus:scale-105 active:scale-105
       disabled:scale-100 disabled:bg-opacity-60"
+      disabled={pending}
     >
       {pending ? (
         <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>

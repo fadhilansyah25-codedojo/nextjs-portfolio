@@ -3,7 +3,6 @@
 import React from "react";
 import { SectionName } from "@/lib/types";
 
-
 type ActiveSectionContextType = {
   activeSection: SectionName;
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
