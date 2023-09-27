@@ -38,7 +38,7 @@ export default function Intro() {
               height={192}
               quality={95}
               priority={true}
-              className="h-24 w-24 rounded-full border-[0.3rem] border-white
+              className="h-32 w-32 rounded-full border-[0.3rem] border-white
             object-cover object-[50%_0%] shadow-xl"
             />
           </motion.div>
@@ -59,16 +59,20 @@ export default function Intro() {
       </div>
 
       {/* introduction desc container */}
+      <h1 className="mt-4 text-2xl font-medium">Fadil Ardiansyah</h1>
       <motion.h1
-        className="leading-[1.5 mb-10 mt-4 px-4 text-2xl font-medium"
+        className="leading-[1.5 mb-10 mt-4 px-4 text-xl sm:text-2xl font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Fadil Ardiansyah</span> I'm a{" "}
-        <span className="font-bold">web developer</span> with{" "}
-        <span className="font-bold">1+ years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">Hello, </span> I'm{" "}
+        <span className="font-bold">web developer.</span> I've dedicated{" "}
+        <span className="underline">countless</span> hours with over the past{" "}
+        <span className="font-bold">
+          {new Date().getFullYear() - 2020}+ years
+        </span>{" "}
+        to mastering <span className="font-bold">web development</span>. I enjoy
+        building <span className="italic underline">sites & apps.</span>
       </motion.h1>
 
       {/* CTA for contact container */}
@@ -98,8 +102,8 @@ export default function Intro() {
         {/* button to donwload cv */}
         <a
           className="group flex items-center justify-center gap-2 rounded-lg bg-white px-7 py-4 
-          shadow-sm outline-none transition duration-200 hover:scale-110 focus:scale-110 active:scale-105 sm:py-3
-          sm:text-sm dark:bg-black/40"
+          shadow-sm outline-none transition duration-200 hover:scale-110 focus:scale-110 active:scale-105 dark:bg-black/40
+          sm:py-3 sm:text-sm"
           href="https://drive.google.com/file/d/1UtxJv5ZPRdQ6Mie6QSVdoj1X0bMIfyIy/view?usp=sharing"
           target="_blank"
         >
@@ -112,10 +116,10 @@ export default function Intro() {
           href="https://www.linkedin.com/in/fadhilansyah25/"
           className="flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-white px-3 
           py-4 text-[#0077B5] shadow-sm outline-none transition duration-200 hover:scale-[1.2] 
-          focus:scale-110 active:scale-105 sm:py-3 dark:bg-black/40"
+          focus:scale-110 active:scale-105 dark:bg-black/40 sm:py-3"
           target="_blank"
         >
-          <BsIcon.BsLinkedin/>
+          <BsIcon.BsLinkedin />
           <p className="sm:hidden">Linkedin</p>
         </a>
 
@@ -124,10 +128,10 @@ export default function Intro() {
           href="https://github.com/fadhilansyah25"
           className="flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-white px-3 py-4 
           shadow-sm outline-none transition duration-200 hover:scale-[1.2] focus:scale-110 active:scale-105 
-          sm:py-3 dark:bg-black/40"
+          dark:bg-black/40 sm:py-3"
           target="_blank"
         >
-          <BsIcon.BsGithub/>
+          <BsIcon.BsGithub />
           <p className="sm:hidden">Github</p>
         </a>
       </motion.div>
