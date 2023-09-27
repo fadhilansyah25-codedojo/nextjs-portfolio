@@ -1,10 +1,23 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+
+/* import image path */
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+
+/* import icons */
+import { CgWorkAlt } from "react-icons/cg";
+import { FaFigma, FaHtml5, FaNodeJs, FaNpm, FaReact } from "react-icons/fa";
+import { LuGraduationCap } from "react-icons/lu";
+import { TbBrandGolang } from "react-icons/tb";
+import { DiCss3 } from "react-icons/di";
+import {
+  SiExpress,
+  SiJavascript,
+  SiNextdotjs,
+  SiStorybook,
+  SiTypescript,
+} from "react-icons/si";
 
 export const links = [
   {
@@ -14,10 +27,6 @@ export const links = [
   {
     name: "About",
     hash: "./#about",
-  },
-  {
-    name: "Projects",
-    hash: "./#projects",
   },
   {
     name: "Skills",
@@ -34,6 +43,10 @@ export const links = [
   {
     name: "Contact",
     hash: "./#contact",
+  },
+  {
+    name: "Projects",
+    hash: "./projects",
   },
 ] as const;
 
@@ -136,3 +149,23 @@ export const skillsData = [
   "Django",
   "Framer Motion",
 ] as const;
+
+const skills = [
+  { label: "JavaScript", icon: SiJavascript },
+  { label: "TypeScript", icon: SiTypescript },
+  { label: "HTML", icon: FaHtml5 },
+  { label: "CSS", icon: DiCss3 },
+  { label: "ReactJS", icon: FaReact },
+  { label: "NextJS", icon: SiNextdotjs },
+  { label: "NodeJS", icon: FaNodeJs },
+  { label: "NPM", icon: FaNpm },
+];
+
+export const moderateSkills = [
+  { label: "Figma", icon: FaFigma },
+  { label: "Express", icon: SiExpress },
+  { label: "Storybook", icon: SiStorybook },
+  { label: "React Native", icon: FaReact },
+];
+
+export const learnedSkills = [{ label: "Golang", icon: TbBrandGolang }];
