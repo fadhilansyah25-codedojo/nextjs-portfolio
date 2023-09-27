@@ -59,21 +59,23 @@ export default function Intro() {
       </div>
 
       {/* introduction desc container */}
-      <h1 className="mt-4 text-2xl font-medium">Fadil Ardiansyah</h1>
-      <motion.h1
-        className="leading-[1.5 mb-10 mt-4 px-4 text-xl sm:text-2xl font-medium"
+      <motion.div
+        className="leading-[1.5 mb-10  px-4 text-xl font-medium sm:text-2xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, </span> I'm{" "}
-        <span className="font-bold">web developer.</span> I've dedicated{" "}
-        <span className="underline">countless</span> hours with over the past{" "}
-        <span className="font-bold">
-          {new Date().getFullYear() - 2020}+ years
-        </span>{" "}
-        to learning <span className="font-bold">web development</span>. I enjoy
-        building <span className="italic underline">sites & apps.</span>
-      </motion.h1>
+        <h1 className="mt-4 text-2xl font-medium">Fadil Ardiansyah</h1>
+        <h1 className="mt-4">
+          <span className="font-bold">Hello, </span> I'm{" "}
+          <span className="font-bold">web developer.</span> I've dedicated{" "}
+          <span className="underline">countless</span> hours with over the past{" "}
+          <span className="font-bold">
+            {new Date().getFullYear() - 2020}+ years
+          </span>{" "}
+          to learning <span className="font-bold">web development</span>. I
+          enjoy building <span className="italic underline">sites & apps.</span>
+        </h1>
+      </motion.div>
 
       {/* CTA for contact container */}
       <motion.div
