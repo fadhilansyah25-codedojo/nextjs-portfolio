@@ -151,21 +151,21 @@ export const skillsData = [
 ] as const;
 
 const skills = [
-  { label: "JavaScript", icon: SiJavascript },
-  { label: "TypeScript", icon: SiTypescript },
   { label: "HTML", icon: FaHtml5 },
   { label: "CSS", icon: DiCss3 },
-  { label: "ReactJS", icon: FaReact },
-  { label: "NextJS", icon: SiNextdotjs },
-  { label: "NodeJS", icon: FaNodeJs },
+  { label: "JavaScript", icon: SiJavascript },
+  { label: "TypeScript", icon: SiTypescript },
+  { label: "React.js", icon: FaReact },
+  { label: "Next.js", icon: SiNextdotjs },
+  { label: "Node.js", icon: FaNodeJs },
   { label: "NPM", icon: FaNpm },
-];
+] as const;
 
 export const moderateSkills = [
   { label: "Figma", icon: FaFigma },
   { label: "Express", icon: SiExpress },
   { label: "Storybook", icon: SiStorybook },
   { label: "React Native", icon: FaReact },
-];
+] as const;
 
-export const learnedSkills = [{ label: "Golang", icon: TbBrandGolang }];
+export const learnedSkills = [{ label: "Golang", icon: TbBrandGolang }] as const;
