@@ -71,7 +71,7 @@ export default function Intro() {
         <span className="font-bold">
           {new Date().getFullYear() - 2020}+ years
         </span>{" "}
-        to mastering <span className="font-bold">web development</span>. I enjoy
+        to learning <span className="font-bold">web development</span>. I enjoy
         building <span className="italic underline">sites & apps.</span>
       </motion.h1>
 
