@@ -13,6 +13,9 @@ type ActiveSectionContextType = {
 export const ActiveSectionContext =
   React.createContext<ActiveSectionContextType | null>(null);
 
+/**
+ * Active section context provider for header tracking which section is active 
+ */
 export default function ActiveSectionContextProvider({
   children,
 }: {
@@ -36,6 +39,9 @@ export default function ActiveSectionContextProvider({
   );
 }
 
+/**
+ * return state that controlling active section
+ */
 export function useActiveSectionContext() {
   const context = React.useContext(ActiveSectionContext);
 

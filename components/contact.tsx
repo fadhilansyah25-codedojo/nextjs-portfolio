@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
-import { useToastContext } from "./toast";
+import { useToastContext } from "@/context/toast-context";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
