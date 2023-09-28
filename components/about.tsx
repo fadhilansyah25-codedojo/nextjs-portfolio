@@ -51,7 +51,7 @@ export default function About() {
         I'm also learning how to public speaking.
       </p>
 
-      <figure>
+      <figure className="mt-8">
         <Image src={MarioGif} alt="mario-chill gif" className="mb-3" />
         <figcaption className="text-center text-xs text-blue-600 hover:cursor-pointer">
           <a href="https://www.behance.net/pixeljeff">

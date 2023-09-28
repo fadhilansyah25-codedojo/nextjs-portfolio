@@ -10,14 +10,20 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaFigma, FaHtml5, FaNodeJs, FaNpm, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { TbBrandGolang } from "react-icons/tb";
-import { DiCss3 } from "react-icons/di";
+import { DiCss3, DiMysql } from "react-icons/di";
 import {
-  SiExpress,
+  SiAiohttp,
+  SiApollographql,
+  SiBun,
+  SiFirebase,
+  SiGraphql,
+  SiHasura,
   SiJavascript,
   SiNextdotjs,
-  SiStorybook,
+  SiRedux,
   SiTypescript,
 } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 export const links = [
   {
@@ -150,22 +156,31 @@ export const skillsData = [
   "Framer Motion",
 ] as const;
 
-const skills = [
+export const skills = [
   { label: "HTML", icon: FaHtml5 },
   { label: "CSS", icon: DiCss3 },
   { label: "JavaScript", icon: SiJavascript },
   { label: "TypeScript", icon: SiTypescript },
   { label: "React.js", icon: FaReact },
   { label: "Next.js", icon: SiNextdotjs },
-  { label: "Node.js", icon: FaNodeJs },
   { label: "NPM", icon: FaNpm },
 ] as const;
 
 export const moderateSkills = [
-  { label: "Figma", icon: FaFigma },
-  { label: "Express", icon: SiExpress },
-  { label: "Storybook", icon: SiStorybook },
   { label: "React Native", icon: FaReact },
+  { label: "Firebase", icon: SiFirebase },
+  { label: "Hasura", icon: SiHasura },
+  { label: "Redux", icon: SiRedux },
+  { label: "Graphql", icon: SiGraphql },
+  { label: "Apollo Client", icon: SiApollographql },
+  { label: "Figma", icon: FaFigma },
 ] as const;
 
-export const learnedSkills = [{ label: "Golang", icon: TbBrandGolang }] as const;
+export const beginnerSkills = [
+  { label: "HTTP", icon: SiAiohttp },
+  { label: "Node.js", icon: FaNodeJs },
+  { label: "Bun.sh", icon: SiBun },
+  { label: "Golang", icon: TbBrandGolang },
+  { label: "PostgreSQL", icon: BiLogoPostgresql },
+  { label: "MySQL", icon: DiMysql },
+] as const;
