@@ -13,7 +13,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 mt-20 max-w-[45rem] scroll-mt-28 px-4 leading-7 sm:mb-40"
+      className="mb-28 mt-20 max-w-[45rem] scroll-mt-28 px-4 leading-7"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -53,7 +53,7 @@ export default function About() {
 
       <figure>
         <Image src={MarioGif} alt="mario-chill gif" className="mb-3" />
-        <figcaption className="text-center text-sm">
+        <figcaption className="text-center text-xs text-blue-600 hover:cursor-pointer">
           <a href="https://www.behance.net/pixeljeff">
             Chill Mario by Pixel Jeff
           </a>
