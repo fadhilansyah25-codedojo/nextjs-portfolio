@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#experience-decs ul {
+  @apply list-outside list-disc;
+  padding-left: 1em;
+}

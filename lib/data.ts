@@ -58,28 +58,62 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+    title: "React and React Native Trainee Participant",
+    location: "Hacktiv8 (PT Hacktivate Teknologi Indonesia)",
+    description: `<p>Kemendikbud MSIB Kampus Merdeka Batch 3 in collaboration with Hacktiv8</p>
+      <ul>
+      <li>Understand the Basics and Fundamentals to become a React programmer, especially ReactJS and React Native.</li>
+      <li>Implement Web Apps and Mobile Apps Interface development using the React/React Framework as needed.</li>
+      <li>Perform online deployment with several 3rd Parties services.</li>
+      <li>Understand the React/React Native framework end to end from development to deployment in a structured manner.</li>
+      <li>Debugging and Optimization of ReactJS Web Applications.</li>
+      </ul>`,
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "August, 2022 - December, 2022",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+    title: "Full Stack Engineer Trainee Participant",
+    location: "Alterra Academy (PT. Marka Kreasi Persada)",
+    description: `<p>
+      Kemendikbud MSIB Kampus Merdeka Batch 1 in collaboration with Alterra Academy.
+      </p>
+      <ul>
+      <li>Develop backend applications using the Go language and creating REST APIs with the Echo Framework.<br>Develop frontend applications using front‐end libraries React JS, Redux, and the Tailwind CSS Framework.<br></li>
+      <li>Implement the usage of SQL &amp; NoSQL DBMS using PostgreSQL and MongoDB.<br></li>
+      <li>Gaining an in‐depth understanding of the implementation of CI/CD &amp; Cloud Services.<br></li>
+      <li>Acquiring a thorough comprehension of basic problem‐solving skills and implementing them using programming<br>languages and databases.<br></li>
+      <li>Collaborating in the Capstone project to build real collaborative projects with other participants.</li>
+      </ul>`,
+    icon: React.createElement(FaReact),
+    date: "August, 2021 - January, 2022",
+  },
+  {
+    title: "Data Entry Staff",
+    location: "PT. Gemilang Indonesia Sukses Mulia",
+    description: `
+      <ul>
+      <li>Using online media to search and collect news related to clients<br></li>
+      <li>Input the collected news data into the system<br></li>
+      <li>Curate all client‐related news based on predetermined keywords<br></li>
+      <li>Monitor and analyze data through media monitoring / social listening platforms</li>
+      </ul>
+    `,
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "September, 2018 - March, 2019",
   },
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    title: "Store Associate",
+    location: "PT. Gramedia Asri Media",
+    description: `
+      <ul>
+      <li>Responsible for providing customers with an excellent buying experience.<br></li>
+      <li>Manage the store and ensure products are properly displayed before the store opens.<br></li>
+      <li>Perform routine inventory counts and submit reports to the Store Manager.<br></li>
+      <li>Upsell to customers through recommendations.<br></li>
+      </ul>
+    `,
+    icon: React.createElement(CgWorkAlt),
+    date: "September, 2018 - March, 2019",
   },
 ] as const;
 
