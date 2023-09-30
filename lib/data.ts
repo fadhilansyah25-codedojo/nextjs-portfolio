@@ -119,28 +119,90 @@ export const experiencesData = [
 
 export const educationsData = [
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    title: "Informatics Engineering",
+    location: "University of Pamulang - Bachelor's Degree",
+    description: `
+      <p>
+      GPA 3.47
+      </p>
+      <ul>
+      <li>Kemdikbud MSIB Kampus Merdeka Batch‐3 2022 Participant<br></li>
+      <li>Kemdikbud MSIB Kampus Merdeka Batch‐1 2021 Participant<br></li>
+      <li>University Community Service Program Committee 2022: Seminar on Introduction to Information Technology at Yayasan<br>Intifa Cinta Yatim and Dhuafa Al‐Ikhwaniyah, Tangerang</li>
+      </ul>
+    `,
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "September, 2018 - March, 2023",
+  },
+  {
+    title: "React Developer - Professional Academy Kominfo x Techready",
+    location: "Kominfo Digitalent Scholarship 2022",
+    date: "May, 2022 - September, 2022",
+    description: `
+      <p>
+      Several of the subjects covered during this training program:
+      </p>
+      <ul>
+        <li>Understand the basics of JavaScript programming<br></li>
+        <li>Understand advanced concepts of JavaScript programming language OOP, Asynchronous</li>
+        <li>programming and using best<br></li>
+        <li>practices when working with REST APIs<br></li>
+        <li>Understand how to build a website with JavaScript frameworks ReactJS<br></li>
+        <li>Able to use client‐side state management Redux/Redux Toolkit<br></li>
+        <li>Deploy SPA web‐based applications to Netlify hosting services</li>
+      </ul>
+    `,
+    icon: React.createElement(LuGraduationCap),
+  },
+  {
+    title: "UI/UX Designer - Professional Academy Kominfo x Skilvul",
+    location: "Kominfo Digitalent Scholarship 2021",
+    date: "August, 2021 - October, 2021",
+    description: `
+      <p>
+        Skilvul Virtual Internship in collaboration with Waste4Change.com:<br>
+      </p>
+      <ul>
+          <li>Understand the Fundamentals of UI/UX Design &amp; basic use of Figma<br></li>
+          <li>Learn UX Research methodology through Design Thinking process<br></li>
+          <li>Learn the fow of making User Flow &amp; Wireframe and realize UI Application Prototype based on UX Research<br></li>
+          <li>Understand and simulate the fow of the UX Interview process<br></li>
+          <li>Document and create UX/UI Case Study Report and publish it to Medium.com<br></li>
+          <li>Present the Design Solution to the mentor and all participants</li>
+      </ul>
+    `,
+    icon: React.createElement(LuGraduationCap),
+  },
+  {
+    title: "HTML, CSS, JavaScript - Professional Academy Kominfo x Progate",
+    location: "Kominfo Digitalent Scholarship 2021",
+    date: "March, 2021 - May, 2021",
+    description: `
+      <p>
+        Several of the subjects covered during this training program:
+      </p>
+      <ul>
+        <li>Learn base front end development technologies.<br></li>
+        <li>Learn HTML5, CSS3, and JavaScript.<br></li>
+        <li>Learn how to use CSS3 UI Bootstrap Framework.<br></li>
+        <li>Building responsive UI and user‐friendly web applications</li>
+      </ul>
+    `,
+    icon: React.createElement(LuGraduationCap),
+  },
+  {
+    title: "Social Science",
+    location: "SMA Daarul Qur'an Islamic Boarding School - High School",
+    date: "June, 2012 - July, 2015",
+    description: `
+      <p>
+        Achievements:       
+      </p>
+      <ul>
+        <li><span style="color: var(--body-color); font-size: 16px;">Third rank of eleventh grade at the frst semester on academic year 2013 ‐ 2014</span><br></li>
+      </ul> 
+    `,
+    icon: React.createElement(LuGraduationCap),
   },
 ] as const;
 
