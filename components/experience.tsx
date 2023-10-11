@@ -20,7 +20,7 @@ const fadeInAnimationVariants = {
 };
 
 export default function Exprerience() {
-  const { ref } = useSectionInView("Experience", { amount: 0.6 });
+  const { ref } = useSectionInView("Experience", { amount: 0.1 });
 
   return (
     <motion.section

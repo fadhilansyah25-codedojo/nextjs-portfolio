@@ -20,7 +20,7 @@ const fadeInAnimationVariants = {
 };
 
 export default function Educations() {
-  const { ref } = useSectionInView("Educations", { amount: 0.6 });
+  const { ref } = useSectionInView("Educations", { amount: 0.1 });
 
   return (
     <motion.section
